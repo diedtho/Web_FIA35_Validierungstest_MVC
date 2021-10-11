@@ -9,14 +9,14 @@ namespace Web_FIA35_Validierungstest_MVC.Models
 {
     public class InsertViewModel
     {
-        [Required(ErrorMessage ="Nötig")]
+        [Required(ErrorMessage = "Nachname wird benötigt")]
         [RegularExpression("[a-zA-Z]+")]
-        [StringLength(25, ErrorMessage = "Nachname wird benötigt")]
+        [StringLength(25, ErrorMessage = "Nachname darf nur 25 Zeichen lang sein")]
         public string Name { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Vorname wird benötigt")]
         [RegularExpression("[a-zA-Z]+")]
-        [StringLength(25,ErrorMessage ="Vorname wird benötigt")]
+        [StringLength(25,ErrorMessage ="Vorname darf nur 25 Zeichen lang sein")]
         public string Vorname { get; set; }
 
         [Required]
