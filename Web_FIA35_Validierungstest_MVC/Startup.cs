@@ -18,8 +18,8 @@ namespace Web_FIA35_Validierungstest_MVC
         {
             services.AddControllersWithViews().AddMvcOptions(o=>
             { o.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(n => "Erforderlich"); });
-            services.AddControllersWithViews().AddMvcOptions(o =>
-            { o.ModelBindingMessageProvider.SetNonPropertyValueMustBeANumberAccessor(n => "Nur Zahlen"); });
+            //services.AddControllersWithViews().AddMvcOptions(o =>
+            //{ o.ModelBindingMessageProvider.SetNonPropertyValueMustBeANumberAccessor(n => "Nur Zahlen"); });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

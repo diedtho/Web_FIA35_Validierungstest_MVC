@@ -37,7 +37,14 @@ namespace Web_FIA35_Validierungstest_MVC.Controllers
                 return View(eingabe);
             }
 
+            // Hier erfolgt die Weiterverarbeitung der eingegebenen Daten ... z.B. Übergabe in Datenbank
+
             return RedirectToAction("Index");
+            // Oder
+            // return view("Eine View");
+            // Oder
+            // return ...
+
         }
     }
 }
